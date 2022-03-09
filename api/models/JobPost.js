@@ -59,6 +59,10 @@ const JobPostSchema = new mongoose.Schema(
       type: Array,
       required: true,
     },
+    jobcandidates: {
+      type: Array,
+      required: true,
+    },
   },
   { timestamps: true }
 );
