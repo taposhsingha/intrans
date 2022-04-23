@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useLocation } from "react-router";
 import axios from "axios";
+import { Context } from "../../context/Context";
 
 export default function ApplyNow() {
   const loc = useLocation();
@@ -40,6 +41,7 @@ export default function ApplyNow() {
     };
     getJobpost();
   }, [path]);
+  const { user, dispatch } = useContext(Context);
 
   return (
     <div>
@@ -95,7 +97,7 @@ export default function ApplyNow() {
           />
         </div>
         <button className="mr-[20px] py-3 px-3 bg-blue-400 text-white rounded">
-          Delete Blog
+          Apply
         </button>
       </div>
     </div>

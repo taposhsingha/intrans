@@ -7,6 +7,7 @@ const usersRoute = require("./routes/users");
 const postRoute = require("./routes/posts");
 const testRoute = require("./routes/test");
 const JobPostRoute = require("./routes/jobposts");
+
 const categoryRoute = require("./routes/categories");
 const multer = require("multer");
 const path = require("path");

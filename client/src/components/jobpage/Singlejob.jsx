@@ -5,6 +5,8 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import placeholder from "../../images/placeholder image.png";
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
 
 export default function Singlejob() {
   const loc = useLocation();
@@ -97,8 +99,8 @@ export default function Singlejob() {
               <div className="text-3xl  mt-[15px] font-bold">
                 Update Job position:
               </div>
-              <input
-                type="text"
+              <ReactQuill
+                theme="snow"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
                 className="relative mt-[15px] w-4/5 border border-purple-200 p-3 rounded outline-none focus:border-blue-500"

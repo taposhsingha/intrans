@@ -65,14 +65,14 @@ export default function UserProfile() {
             </div>
             <input
               type="text"
-              placeholder={user.username}
+              value={user.username}
               onChange={(e) => setUsername(e.target.value)}
               class="w-4/5 border border-purple-200 p-3 rounded outline-none focus:border-blue-500"
             />
             <div class="font-bold text-3xl font-ubun text-zinc-700">Email</div>
             <input
               type="text"
-              placeholder={user.email}
+              value={user.email}
               onChange={(e) => setEmail(e.target.value)}
               class="w-4/5 border border-purple-200 p-3 rounded outline-none focus:border-blue-500"
             />
@@ -89,7 +89,7 @@ export default function UserProfile() {
             </div>
             <textarea
               type="text"
-              placeholder={user.desc}
+              value={user.desc}
               onChange={(e) => setDesc(e.target.value)}
               class="w-4/5 border h-[150px] border-purple-200 p-3 rounded outline-none focus:border-blue-500"
             />
@@ -98,7 +98,7 @@ export default function UserProfile() {
             </div>
             <textarea
               type="text"
-              placeholder={user.experience}
+              value={user.experience}
               onChange={(e) => setExperience(e.target.value)}
               class="w-4/5 border h-[150px] border-purple-200 p-3 rounded outline-none focus:border-blue-500"
             />
